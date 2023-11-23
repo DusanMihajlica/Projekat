@@ -2,29 +2,29 @@ package paket;
 
 public class Avion extends Vozilo {
 	
-	private String KlasaAviona;
+	private String klasaAviona;
 	
 	public Avion() {
 		
 	}
-	public Avion(String KlasaAviona){
-		this.KlasaAviona = KlasaAviona;
+	public Avion(String klasaAviona){
+		this.klasaAviona = klasaAviona;
 	}
 	
 	public String getKlasaAviona() {
-		return KlasaAviona;
+		return klasaAviona;
 	}
 	public void setKlasaAviona(String klasaAviona) {
-		KlasaAviona = klasaAviona;
+		this.klasaAviona = klasaAviona;
 	}
 	
-	public double NaplataPutarine(double CenaPutarine) {
-		if(KlasaAviona=="Ekonomska klasa")
-			return CenaPutarine - CenaPutarine * 0.15;
-		else if(KlasaAviona=="Biznis klasa")
-			return CenaPutarine + CenaPutarine * 0.25;
+	public double naplataPutarine() {
+		if(klasaAviona=="Ekonomska klasa")
+			return cenaPutarine - cenaPutarine * 0.15;
+		else if(klasaAviona=="Biznis klasa")
+			return cenaPutarine + cenaPutarine * 0.25;
 		else 
-			return CenaPutarine;
+			return cenaPutarine;
 	}
 
 }

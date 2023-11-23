@@ -19,11 +19,11 @@ public class Motocikl  extends Vozilo {
 		BrojVozaca = brojVozaca;
 	}
 	
-	public double NaplataPutarine(double CenaPutarine) {
+	public double naplataPutarine() {
 		if(this.getBrojVozaca()==1)
-			return CenaPutarine - CenaPutarine * 0.2;
+			return cenaPutarine - cenaPutarine * 0.2;
 		else
-			return CenaPutarine - CenaPutarine * 0.3;
+			return cenaPutarine - cenaPutarine * 0.3;
 	}
 
 }

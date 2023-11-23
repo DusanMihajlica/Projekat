@@ -17,8 +17,8 @@ public class Auto extends Vozilo {
 		this.brojPutnika = brojPutnika;
 	}
 
-	public double NaplataPutarine(double CenaPutarine) {
-		return CenaPutarine + (CenaPutarine * 0.1) * brojPutnika;
+	public double naplataPutarine() {
+		return cenaPutarine + (cenaPutarine * 0.1) * brojPutnika;
 	}
 	
 }
