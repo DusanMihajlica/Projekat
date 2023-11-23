@@ -1,22 +1,21 @@
 package paket;
 
 public abstract class Vozilo {
-	protected double CenaPutarine;
-	public abstract double NaplataPutarine(double CenaPutarine);
-	
+	protected double cenaPutarine;
+	public abstract double naplataPutarine();
 	
 	public Vozilo() {
 		
 	}
-	public Vozilo(double CenaPutarine) {
-		this.CenaPutarine=CenaPutarine;
+	public Vozilo(double cenaPutarine) {
+		this.cenaPutarine=cenaPutarine;
 	}
 
 	public double getCenaPutarine() {
-		return CenaPutarine;
+		return cenaPutarine;
 	}
 
 	public void setCenaPutarine(double cenaPutarine) {
-		CenaPutarine = cenaPutarine;
+		this.cenaPutarine = cenaPutarine;
 	}
 }
